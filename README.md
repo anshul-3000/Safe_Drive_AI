@@ -1,22 +1,66 @@
-# Drowsiness Detection and Alarming System
+# Drowsiness Detection System
 
-## Overview
-The drowsiness detection and alarming system is an innovative project leveraging Python and machine learning to combat the critical issue of driver fatigue. This system holds immense potential to significantly reduce the frequent occurrence of road accidents worldwide, thereby enhancing road safety and potentially saving countless lives.
+## 🚀 Overview
+This project implements a **real-time drowsiness detection system** using OpenCV and Python. It monitors eye states and triggers an alarm if prolonged eye closure is detected, helping prevent accidents caused by drowsy driving.
 
-## Key Objectives
-The project focuses on two primary tasks:
-1. Continuous detection of facial and eye movements of the driver.
-2. Activation of alarms to alert the driver upon detecting signs of drowsiness.
+## 🔥 Features
+- **Real-time face and eye detection** using OpenCV.
+- **Calibration mode** to dynamically adjust the drowsiness threshold.
+- **Alarm system** using Pygame to alert users when drowsiness is detected.
+- **Tkinter-based GUI** for easy interaction.
+- **Processes webcam frames at high speed** for efficient detection.
 
-## Essential Components
-To function effectively, the project relies on three essential Python libraries:
-1. **OpenCV**: Enables real-time detection of faces and eyes.
-2. **Pygame**: Facilitates the triggering of audible alarms upon detecting drowsiness.
-3. **Threading**: Supports efficient management of concurrent tasks, ensuring seamless operation of real-time video processing and independent alarm triggering.
+## 🛠️ Tech Stack
+- **Python** – Core programming language
+- **OpenCV** – Face and eye detection
+- **Pygame** – Alarm sound system
+- **Tkinter** – GUI development
+- **PIL (Python Imaging Library)** – Image handling
+- **Threading** – For efficient background tasks
 
-## Workflow
-1. **Initialization and Calibration**: The camera initializes and calibrates the system over a 15-second period to compute the average eye blink duration.
-2. **Threshold Setting**: Based on calibration results, the system sets a threshold value to trigger alarms.
-3. **Real-time Detection**: Once calibrated, the camera continuously monitors for facial presence and eye movements.
-4. **Frame Processing**: Each camera frame is analyzed against a pre-trained haar cascade dataset.
-5. **Alarm Triggering**: Upon detecting drowsy eyes, identified through sustained matching against the dataset for the specified threshold duration, the system promptly triggers an alarm to alert the driver to wake up.
+## 📌 Installation
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/yourusername/drowsiness-detection.git
+   cd drowsiness-detection
+   ```
+2. **Install Dependencies**
+   ```sh
+   pip install opencv-python pygame pillow
+   ```
+3. **Download Haarcascade Files**
+   Ensure the following files are present in the project directory:
+   - `haarcascade_frontalface_alt.xml`
+   - `haarcascade_eye_tree_eyeglasses.xml`
+   
+   You can download them from [OpenCV's GitHub](https://github.com/opencv/opencv/tree/master/data/haarcascades).
+
+## 🚀 Usage
+1. **Run the script**
+   ```sh
+   python opencv_drowsiness_detection.py
+   ```
+2. **Calibration Mode**
+   - Click **"Start Calibration"** to set up blink duration.
+   - The system will monitor blinks and set a custom drowsiness threshold.
+   
+3. **Drowsiness Monitoring**
+   - Click **"Start Monitoring"** to begin real-time detection.
+   - The system will trigger an alarm if eyes remain closed beyond the threshold.
+   - Press `q` to exit the monitoring window.
+
+## 🎯 Future Enhancements
+- Implement deep learning (CNN-based) detection.
+- Mobile integration for real-time driver alerts.
+- Cloud-based monitoring and analytics.
+
+## 🤝 Contributing
+Feel free to fork the repo, open issues, or submit pull requests!
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
+---
+**🔗 Connect with Me:**  
+[LinkedIn](https://www.linkedin.com/in/anshul-chaudhary-b571b5251/) | [GitHub](https://github.com/yourusername)
+
