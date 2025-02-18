@@ -57,10 +57,6 @@ This project implements a **real-time drowsiness detection system** using OpenCV
 ## 🤝 Contributing
 Feel free to fork the repo, open issues, or submit pull requests!
 
-## 📜 License
-This project is licensed under the **MIT License**.
-
----
 **🔗 Connect with Me:**  
-[LinkedIn](https://www.linkedin.com/in/anshul-chaudhary-b571b5251/) | [GitHub](https://github.com/yourusername)
+[LinkedIn](https://www.linkedin.com/in/anshul-chaudhary-b571b5251/) | [GitHub](https://github.com/anshul-3000)
 
